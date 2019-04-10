@@ -30,4 +30,5 @@ end
 
 def valid_phone_number?(phone)
 reg = \(*[0-9]{3}\)*[\s]*[0-9]{3}[-\s]*[0-9]{4}
+return phone.match(reg)
 end
